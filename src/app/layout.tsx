@@ -18,9 +18,9 @@ export default function RootLayout({
   return (
     <html lang="en" className={sans.className}>
       <body>
-        <div id='wrap' className='flex flex-col my-0 mx-auto h-full bg-rose-100 lg:w-11/12'>
+        <div id='wrap' className='flex flex-col my-0 mx-auto h-full lg:w-11/12'>
           <Header />
-          <main className='grow bg-slate-300'>{children}</main>
+          <main className='grow'>{children}</main>
           <Footer />
         </div>
       </body>
