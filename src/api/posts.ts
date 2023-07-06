@@ -10,10 +10,18 @@ export type Post = {
     featured: boolean;
 }
 
+// featured가 true것만 표시
 export async function getFeaturedPosts(): Promise<Post[]>{
     return getAllPosts()
         .then((posts) => posts.filter((post) => post.featured));
 }
+
+// featured가 false인것만 표시
+export async function getNonFeaturedPosts(): Promise<Post[]>{
+    return getAllPosts()
+        .then((posts) => posts.filter((post) => !post.featured));
+}
+
 
 export async function getAllPosts(): Promise<Post[]> {
     const filePath = path.join(process.cwd(), 'data', 'posts.json'); //파일경로설정

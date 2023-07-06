@@ -1,5 +1,5 @@
-export default function PostsPage() {
+export default async function PostsPage() {
   return (
-    <div>Posts</div>
+    <p>포스트들!!</p>
   )
 }
