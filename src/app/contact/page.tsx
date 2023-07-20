@@ -1,6 +1,12 @@
 import ContactForm from "@/components/ContactForm";
 import { AiFillGithub } from "react-icons/ai";
 import { FaBookOpen } from "react-icons/fa";;
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact Me",
+  description: "Gyuyeop에게 메일 보내기",
+}
 
 export default function ContactPage() {
   const LINKS = [
